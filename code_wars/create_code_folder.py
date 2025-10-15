@@ -9,7 +9,7 @@ def create_files(title, difficulty, file_endings=None):
     os.makedirs(dir_path, exist_ok=True)
 
     if file_endings is None:
-        file_endings = ["lua", "go", "ts", "py", "cpp"]
+        file_endings = ["go", "ts", "py", "cpp"]
 
     for ending in file_endings:
         file_name = f"{title}.{ending}"
